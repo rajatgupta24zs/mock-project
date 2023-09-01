@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="section">
+      <img id="image" src="./questions.svg" alt="">
+    </div>
+    <div class="section">
+      <h1>Quiz App</h1>
+    <div class="header hidden">
+      <p>Score: <span class="score"></span></p>
+      <p>Timer: <span class="timer"></span></p>
+    </div>
+    <form id="registration-form">
+        <label for="">Username:</label>
+        <input type="text" id="username" placeholder="UserName" required>
+        <label for="">Email:</label>
+        <input type="text" id="email" placeholder="Email" required>
+
+        <label for="">Select Category:</label>
+        <select id="category" required>
+            <option value="11">Entertainment: Film</option>
+            <option value="10">Entertainment: Books</option>
+            <option value="25">Art</option> <br/>
+            <option value="22">Geography</option>
+        </select>
+
+        <label for="">Number of Questions:</label>
+        <input type="number" min="5" id="number-question" placeholder="Select number of questions" required>
+
+        <label for="">Level of difficulty:</label>
+        <select id="level" required>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+    <div id="quiz" class="hidden">
+      <div class="question">
+        <p class="title"></p>
+        <div class="options">
+        </div>
+        <button class="btn-sub">Submit</button>
+        <button class="btn-next" disabled>Next</button>
+      </div>
+    </div>
+    <div class="results hidden">
+      <p class="res-username"></p>
+      <p class="res-score"></p>
+    </div>
+    <div id="error-block"></div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
+

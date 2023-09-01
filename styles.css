@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  margin: 3rem auto;
+  padding: 5rem;
+  width: 92.5%;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.section {
+  width: 50%;
+}
+
+.section > img {
+  padding: 2rem;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+
+label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+select, input[type="text"], input[type="number"] {
+  margin: 0 auto 1.5rem auto;
+  padding: 10px;
+  width: 99%;
+  border-radius: .5rem; 
+  border: 1px solid #000;
+}
+
+#quiz {
+  margin: 1rem;
+}
+
+.header {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.options {
+  margin-bottom: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  margin: .5rem 0;
+  padding: .5rem .75rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+.option:hover {
+  border: 1px solid rgba(118, 170, 249, 1);
+  background-color: rgba(118, 170, 249, 0.5);
+}
+
+.selected {
+  border: 1px solid rgba(118, 170, 249, 1);
+  background-color: rgba(118, 170, 249, 0.3);
+}
+
+.green {
+  border: 1px solid rgba(105, 249, 122, 1) !important;
+  background-color: rgba(105, 249, 122, 0.3) !important;
+}
+
+.red {
+  border: 1px solid rgb(249, 118, 118, 1) !important;
+  background-color: rgba(249, 118, 118, 0.3) !important;
+}
+
+input[type="radio"] {
+  border-radius: 5px 0 0 5px; 
+  margin-bottom: 0;
+} 
+
+button {
+  padding: 10px 20px;  
+  background-color: #007bff;
+  color: #fff;  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #97c9ff;
+  cursor: default;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {  
+  background-color: #2980B9;  
+}
+
+.results {
+  margin: 3rem 5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.results > p {
+  font-weight: bold;
+}
